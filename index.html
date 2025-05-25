@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Supervivencia del Titanic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Predicción de Supervivencia del Titanic</h1>
+        <form id="prediction-form">
+            <label for="pclass">Clase:</label>
+            <select id="pclass" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <label for="sex">Género:</label>
+            <select id="sex" required>
+                <option value="0">Hombre</option>
+                <option value="1">Mujer</option>
+            </select>
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" required>
+
+            <label for="sibsp">Hermanos/Cónyuges a bordo:</label>
+            <input type="number" id="sibsp" required>
+
+            <label for="parch">Padres/Hijos a bordo:</label>
+            <input type="number" id="parch" required>
+
+            <label for="fare">Tarifa:</label>
+            <input type="number" id="fare" required>
+
+            <label for="embarked">Embarque:</label>
+            <select id="embarked" required>
+                <option value="0">Queenstown</option>
+                <option value="1">Southampton</option>
+            </select>
+
+            <button type="submit">Predecir</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
